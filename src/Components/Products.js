@@ -32,6 +32,7 @@ function Products({addToCart}) {
                     </li>
                 ))}
             </ul>
+            <p>Those are all products at the moment</p>
         </div>
     )
 }
