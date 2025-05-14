@@ -40,6 +40,6 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v5
         with:
           organization: product-app-ebiznes
-          projectKey: product-app-ebiznes_sonar-test
+          projectKey: product-app-ebiznes_react-test
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
