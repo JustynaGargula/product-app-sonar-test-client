@@ -14,13 +14,13 @@ function Login(){
             <form action={handleLogin}>
                 <div>
                     <label>
-                        User name
+                        User name<br/>
                         <input type="text" name="username" />
                     </label>
                 </div>
                 <div>
                     <label>
-                        Password
+                        Password<br/>
                         <input type="password" name="password" />
                     </label>
                 </div>
