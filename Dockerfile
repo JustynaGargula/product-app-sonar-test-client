@@ -1,11 +1,16 @@
 FROM node:20-alpine
 
 WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm install
+RUN useradd -r -d /app appUser
 
-COPY . .
-RUN npm run build
+COPY package.json package-lock.json ./
+RUN npm install --ignore-scripts
+
+COPY src/ .
+COPY public/ .
+
+RUN npm run build && chown -R appUser /app
+USER appUser
 
 EXPOSE 3000
 
