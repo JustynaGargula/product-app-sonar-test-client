@@ -37,4 +37,8 @@ function Products({addToCart}) {
     )
 }
 
+Products.propTypes = {
+    addToCart: PropTypes.func.isRequired
+}
+
 export default Products;

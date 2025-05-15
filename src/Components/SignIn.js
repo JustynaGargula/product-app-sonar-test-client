@@ -1,7 +1,7 @@
 import {useNavigate} from "react-router-dom";
 
 function SignIn(){
-    var navigate = useNavigate()
+    let navigate = useNavigate()
     function handleSignIn(){
         alert("Successfully signed in!")
         navigate("/login")
