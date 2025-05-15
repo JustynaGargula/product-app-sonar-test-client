@@ -13,18 +13,16 @@ function Login(){
             <h1>Log in</h1>
             <form action={handleLogin}>
                 <div>
-                    <label id="username">
+                    <label>
                         User name
-                        <input type="text" name="username"/>
+                        <input type="text" name="username" />
                     </label>
-
                 </div>
                 <div>
-                    <label id="password">
+                    <label>
                         Password
-                        <input type="password" name="password"/>
+                        <input type="password" name="password" />
                     </label>
-
                 </div>
                 <button type="submit">Log in</button>
             </form>
