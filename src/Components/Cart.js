@@ -39,7 +39,7 @@ function Cart({cartItems}) {
 }
 
 Cart.propTypes = {
-    cartItems: PropTypes.arrrayOf(
+    cartItems: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.number.isRequired,
             name: PropTypes.string.isRequired,

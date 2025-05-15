@@ -41,20 +41,20 @@ function Payment() {
             <form onSubmit={sendPayment}>
                 <div>
                     <label>
-                        Card number
+                        Card number<br/>
                         <input type="text" name="cardNumber" value={formData.cardNumber} required  onChange={handleChange}/>
                     </label>
                 </div>
                 <div>
                     <label>
-                        Expiry date
+                        Expiry date<br/>
                         <input type="date" name="expiryDate" value={formData.expiryDate} required  onChange={handleChange}/>
                     </label>
 
                 </div>
                 <div>
                     <label>
-                        CVV
+                        CVV<br/>
                         <input type="text" name="cvv" value={formData.cvv} required  onChange={handleChange}/>
                     </label>
 

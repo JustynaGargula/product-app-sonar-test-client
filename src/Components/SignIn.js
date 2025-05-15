@@ -13,19 +13,19 @@ function SignIn(){
             <form action={handleSignIn}>
                 <div>
                     <label id="username">
-                        User name
+                        User name<br/>
                         <input type="text" name="username"/>
                     </label>
                 </div>
                 <div>
                     <label id="email">
-                        Email
+                        Email<br/>
                         <input type="email" name="email"/>
                     </label>
                 </div>
                 <div>
                     <label id="password">
-                        Password
+                        Password<br/>
                         <input type="password" name="password"/>
                     </label>
                 </div>
