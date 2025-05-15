@@ -12,16 +12,22 @@ function SignIn(){
             <h1>Sign in</h1>
             <form action={handleSignIn}>
                 <div>
-                    <label id="username">User name</label>
-                    <input type="text" name="username"/>
+                    <label id="username">
+                        User name
+                        <input type="text" name="username"/>
+                    </label>
                 </div>
                 <div>
-                    <label id="email">Email</label>
-                    <input type="email" name="email"/>
+                    <label id="email">
+                        Email
+                        <input type="email" name="email"/>
+                    </label>
                 </div>
                 <div>
-                    <label id="password">Password</label>
-                    <input type="password" name="password"/>
+                    <label id="password">
+                        Password
+                        <input type="password" name="password"/>
+                    </label>
                 </div>
                 <button type="submit">Sign in</button>
             </form>

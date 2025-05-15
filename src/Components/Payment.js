@@ -40,16 +40,24 @@ function Payment() {
             <p>Amount to pay: {totalAmount}</p>
             <form onSubmit={sendPayment}>
                 <div>
-                    <label>Card number</label>
-                    <input type="text" name="cardNumber" value={formData.cardNumber} required  onChange={handleChange}/>
+                    <label>
+                        Card number
+                        <input type="text" name="cardNumber" value={formData.cardNumber} required  onChange={handleChange}/>
+                    </label>
                 </div>
                 <div>
-                    <label>Expiry date</label>
-                    <input type="date" name="expiryDate" value={formData.expiryDate} required  onChange={handleChange}/>
+                    <label>
+                        Expiry date
+                        <input type="date" name="expiryDate" value={formData.expiryDate} required  onChange={handleChange}/>
+                    </label>
+
                 </div>
                 <div>
-                    <label>CVV</label>
-                    <input type="text" name="cvv" value={formData.cvv} required  onChange={handleChange}/>
+                    <label>
+                        CVV
+                        <input type="text" name="cvv" value={formData.cvv} required  onChange={handleChange}/>
+                    </label>
+
                 </div>
                 <button type="submit">Pay</button>
             </form>

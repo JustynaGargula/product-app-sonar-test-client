@@ -1,5 +1,6 @@
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
+import PropTypes from 'prop-types';
 
 function Cart({cartItems}) {
     const url = "http://localhost:1323/cart";
@@ -34,6 +35,17 @@ function Cart({cartItems}) {
             <p>Total: {totalAmount}</p>
             <button onClick={sendCart}>Go to payment</button>
         </div>
+    )
+}
+
+Cart.propTypes = {
+    cartItems: PropTypes.arrrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            name: PropTypes.string.isRequired,
+            quantity: PropTypes.number.isRequired,
+            price: PropTypes.number.isRequired,
+        })
     )
 }
 
