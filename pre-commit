@@ -1,0 +1,16 @@
+#!/bin/sh
+echo "Running ESLint..."
+
+# Tylko sprawdzane pliki staged (do commita)
+FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(js|jsx|ts|tsx)$')
+
+if [ "$FILES" ]; then
+  npx eslint $FILES
+
+  if [ $? -ne 0 ]; then
+    echo "❌ ESLint errors found. Commit aborted."
+    exit 1
+  fi
+fi
+
+exit 0
